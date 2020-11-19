@@ -1,0 +1,16 @@
+// WiFi
+#define MY_WIFI_SSID                "MY_WIFI_SSID"
+#define MY_WIFI_PASSWORD            "MY_WIFI_PASSWORD6"
+
+// Netatmo
+#define MY_NETATMO_CLIENT_ID        "123456789abcdef012345678"
+#define MY_NETATMO_CLIENT_SECRET    "123456789AbCdEfGhIjKlMnOp"
+#define MY_NETATMO_USERNAME         "MY_NETATMO_USERNAME"
+#define MY_NETATMO_PASSWORD         "MY_NETATMO_PASSWORD"
+
+#define MY_NETATMO_DEVICE_ID        "70%3Aee%3A50%3A??%3A??%3A??"   // 70:ee:50:??:??:??
+
+#define MY_TARGET_LOCATION          "ダイニング"
+
+// Google Home
+#define MY_GOOGLE_HOME              "Google Home Mini"
