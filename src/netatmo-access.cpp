@@ -183,30 +183,24 @@ String composeMessage(String targetLocation, bool forced) {
   WiFiClientSecure *client = new WiFiClientSecure;
   if ( client == NULL ) {
     Log.error("Unable to create client\n");
-  //  decrementFuse();
     return "_fail";
   }
-  //restoreFuse();
   
   // get access token 
   String accessToken = getAccessToken(client);
   if ( accessToken == "" ) {
     Log.error("getAccessToken failed.\n");
     cleanupClient(client);
-  //  decrementFuse();
     return "_fail";
   }
-  //restoreFuse();
 
   // get CO2 value
   int co2value = getCO2value(client, accessToken, targetLocation);
   if ( co2value < 0 ) {
     Log.error("getCO2value failed.\n");
     cleanupClient(client);
-  //  decrementFuse();
     return "_fail";
   }
-  //restoreFuse();
 
   // clean up client
   cleanupClient(client);
