@@ -139,6 +139,8 @@ void loop() {
   time_t currentTime = time(nullptr);
   bool pressed = M5.Btn.isPressed();
   if ( nextTime < currentTime || pressed ) {
+    setLEDGreen();
+    
     WiFiClientSecure *client = new WiFiClientSecure;
     if ( client == NULL ) {
       Log.error("Unable to create client\n");
